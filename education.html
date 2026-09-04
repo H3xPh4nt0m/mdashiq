@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Md Ashiqur Rahman</title>
+    <link rel="icon" type="image/png" href="images/Adobe-Express-file-2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-text">[ system/init ]</div>
+        <div class="loader-bar"><div class="fill"></div></div>
+        <div class="loader-sub">loading education<span class="blink">_</span></div>
+    </div>
+
+    <!-- ===== MATRIX CANVAS ===== -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- ===== SCANLINES ===== -->
+    <div class="scanlines"></div>
+
+    <!-- ===== CRT OVERLAY ===== -->
+    <div class="crt-overlay"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket"><</span>
+                <span>ashiq</span>
+                <span class="logo-bracket">/></span>
+                <span class="logo-cursor"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="education.html" class="active">education</a></li>
+                <li><a href="certifications.html">certifications</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="resume.pdf" target="_blank" class="nav-resume">resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <h1 class="page-title"><span class="hash">#</span> academic journey</h1>
+        <p class="page-subtitle">// my educational background and achievements</p>
+    </div>
+
+    <!-- ===== EDUCATION TIMELINE ===== -->
+    <section style="padding-top: 20px; min-height: auto;">
+        <div class="container">
+            <div class="education-timeline">
+                <div class="education-item reveal">
+                    <div class="edu-card">
+                        <span class="edu-period">2025 - Running</span>
+                        <h3 class="edu-school">Dhaka University</h3>
+                        <p class="edu-degree">Professional Masters in Information and Cyber Security (PMICS)</p>
+                        <p class="edu-gpa">CGPA: <strong>3.38</strong> out of 4.00</p>
+                    </div>
+                </div>
+                <div class="education-item reveal">
+                    <div class="edu-card">
+                        <span class="edu-period">2021 - 2024</span>
+                        <h3 class="edu-school">Daffodil International University (DIU)</h3>
+                        <p class="edu-degree">Bachelor of Science in Software Engineering Major in Cybersecurity</p>
+                        <p class="edu-gpa">CGPA: <strong>3.64</strong> out of 4.00</p>
+                    </div>
+                </div>
+                <div class="education-item reveal">
+                    <div class="edu-card">
+                        <span class="edu-period">2018 - 2020</span>
+                        <h3 class="edu-school">Dr. Mahbubur Rahman Mollah College, Jatrabari</h3>
+                        <p class="edu-degree">Higher Secondary Certificate (HSC) - Science</p>
+                        <p class="edu-gpa">GPA: <strong>5.00</strong> out of 5.00</p>
+                    </div>
+                </div>
+                <div class="education-item reveal">
+                    <div class="edu-card">
+                        <span class="edu-period">2016 - 2018</span>
+                        <h3 class="edu-school">Armanitola Government High School</h3>
+                        <p class="edu-degree">Secondary School Certificate (SSC) - Science</p>
+                        <p class="edu-gpa">GPA: <strong>5.00</strong> out of 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-name">
+                <span class="bracket"><</span> Md. Ashiqur Rahman <span class="bracket">/></span>
+            </p>
+            <p class="footer-tagline">Ethical Hacker & Penetration Tester</p>
+            <div class="footer-social">
+                <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Md Ashiqur Rahman. Built with <span class="heart">♥</span> and lots of <span style="color: var(--green);">caffeine</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Ashiqur Rahman | Ethical Hacker & Penetration Tester</title>
+    <link rel="icon" type="image/png" href="images/Adobe-Express-file-2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-text">[ system/init ]</div>
+        <div class="loader-bar"><div class="fill"></div></div>
+        <div class="loader-sub">loading portfolio<span class="blink">_</span></div>
+    </div>
+
+    <!-- ===== MATRIX CANVAS ===== -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- ===== SCANLINES ===== -->
+    <div class="scanlines"></div>
+
+    <!-- ===== CRT OVERLAY ===== -->
+    <div class="crt-overlay"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket"><</span>
+                <span>ashiq</span>
+                <span class="logo-bracket">/></span>
+                <span class="logo-cursor"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="certifications.html">certifications</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="contact.html">contact</a></li>
+<li><a href="resume.pdf" target="_blank" class="nav-resume">resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home">
+        <div class="container hero">
+            <div class="hero-content">
+                <div class="hero-badge fade-in-up">
+                    <span class="dot"></span>
+                    <span>System Online</span>
+                </div>
+                <p class="hero-greeting fade-in-up fade-in-up-delay-1">
+                    <span class="highlight">$</span> Hello, I'm
+                </p>
+                <h1 class="hero-name fade-in-up fade-in-up-delay-2">Md Ashiqur<br>Rahman</h1>
+                <div class="hero-typing fade-in-up fade-in-up-delay-3">
+                    <span class="typed-text" id="typedText"></span><span class="cursor-blink"></span>
+                </div>
+                <p class="hero-desc fade-in-up fade-in-up-delay-3">
+                    Secures digital systems by uncovering vulnerabilities with expertise and precision. 
+                    Ethical Hacker & Penetration Tester dedicated to building resilient digital environments.
+                </p>
+                <div class="hero-buttons fade-in-up fade-in-up-delay-4">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fa-solid fa-terminal"></i> Contact me
+                    </a>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="hero-social fade-in-up fade-in-up-delay-5">
+                    <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up fade-in-up-delay-3">
+                <div class="hero-image-wrapper">
+                    <div class="glow-ring"></div>
+                    <div class="glow-ring"></div>
+                    <div class="glow-ring"></div>
+                    <img class="avatar" src="images/Adobe-Express-file-2.png" alt="Md Ashiqur Rahman">
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="number">5+</div>
+                        <div class="label">Vendor Certifications</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">20+</div>
+                        <div class="label">Security Tools</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">200+</div>
+                        <div class="label">Training Hours</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUOTE SECTION ===== -->
+    <section style="padding: 40px 20px; min-height: auto; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="quote-section reveal">
+                <p class="quote-text">"Sometimes the scandal is not what law was broken, but what the law allows."</p>
+                <p class="quote-author">— Edward Snowden <span>| Former NSA intelligence contractor</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-terminal-header reveal">
+                <span class="hash">#</span>
+                <span class="title">about-me</span>
+                <span class="line"></span>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <img class="about-img" src="images/Portfolio-About-me-section.png" alt="Md Ashiqur Rahman">
+                    <div class="terminal-box">
+                        <span class="prompt">$</span> cat /etc/passwd<br>
+                        <span class="prompt">$</span> ashiq:x:1000:1000:...<br>
+                        <span class="prompt">$</span> <span style="color: var(--green);">access granted</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <div class="terminal-status">
+                        <span class="status-dot"></span>
+                        <span>status: </span>
+                        <span class="status-text">active / security researcher</span>
+                    </div>
+                    <p class="about-para">
+                        Hello, I'm <strong>Md Ashiqur Rahman</strong> — a cybersecurity professional and lifelong learner 
+                        dedicated to mastering the art of ethical hacking, incident response, and building resilient 
+                        digital environments.
+                    </p>
+                    <p class="about-para">
+                        Currently advancing my technical expertise through the <strong>Professional Masters in 
+                        Information and Cyber Security (PMICS) at the University of Dhaka</strong>. Building on my 
+                        background in <strong>Software Engineering (Major in Cybersecurity)</strong> from Daffodil 
+                        International University.
+                    </p>
+                    <p class="about-para">
+                        I hold professional credentials including <strong>CEH, CHFI, ECIH, and CSA</strong> 
+                        certifications from EC-Council, equipping me with deep expertise in penetration testing, 
+                        digital forensics, SOC analysis, and incident handling.
+                    </p>
+                    <div class="about-certs">
+                        <span class="cert-badge">CEH</span>
+                        <span class="cert-badge">CHFI</span>
+                        <span class="cert-badge">ECIH</span>
+                        <span class="cert-badge">CSA</span>
+                    </div>
+                    <p class="about-para" style="font-size: 0.85rem;">
+                        <strong>Programming:</strong> Python, C/C++, PHP, Laravel, Django<br>
+                        <strong>Databases:</strong> MySQL, PostgreSQL
+                    </p>
+                    <div class="hero-buttons" style="margin-top: 20px;">
+                        <a href="education.html" class="btn btn-outline">
+                            <i class="fa-solid fa-graduation-cap"></i> Education
+                        </a>
+                        <a href="certifications.html" class="btn btn-outline">
+                            <i class="fa-solid fa-award"></i> Certifications
+                        </a>
+                        <a href="experience.html" class="btn btn-outline">
+                            <i class="fa-solid fa-briefcase"></i> Experience
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-terminal-header reveal">
+                <span class="hash">#</span>
+                <span class="title">skills</span>
+                <span class="line"></span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon green"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Core Security</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Penetration Testing</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Bug Hunting</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon purple"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon cyan"><i class="fa-solid fa-database"></i></div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon orange"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Security Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Burpsuite</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Zenmap</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">John the Ripper</span>
+                        <span class="skill-tag">Hydra</span>
+                        <span class="skill-tag">SQLmap</span>
+                        <span class="skill-tag">Nikto</span>
+                        <span class="skill-tag">SEtoolkit</span>
+                        <span class="skill-tag">StellarCyber</span>
+                        <span class="skill-tag">Radware</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon green"><i class="fa-solid fa-laptop"></i></div>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Debian Linux</span>
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">MacOS</span>
+                        <span class="skill-tag">Parrot OS</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="card-header">
+                        <div class="icon purple"><i class="fa-solid fa-award"></i></div>
+                        <h3>Certifications</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">CEH</span>
+                        <span class="skill-tag">CHFI</span>
+                        <span class="skill-tag">ECIH</span>
+                        <span class="skill-tag">CSA</span>
+                        <span class="skill-tag">CAPT</span>
+                        <span class="skill-tag">CNSP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-terminal-header reveal">
+                <span class="hash">#</span>
+                <span class="title">projects</span>
+                <span class="line"></span>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Security Monitoring Lab</h3>
+                        <p>University Project</p>
+                        <p style="margin-top: 10px;">• Built a security monitoring environment using Suricata, Elasticsearch, Wazuh, and Sysmon.<br>
+                        • Configured Suricata IDS and developed custom rules for network threat detection.<br>
+                        • Deployed Wazuh Agent on Windows Server with Sysmon for endpoint telemetry and log collection.<br>
+                        • Created and tested Wazuh detection rules for suspicious Windows activity.<br>
+                        • Performed controlled Mimikatz testing and validated endpoint detection through Wazuh alerts.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">Suricata</span>
+                        <span class="tech-tag">Wazuh</span>
+                        <span class="tech-tag">Elasticsearch</span>
+                        <span class="tech-tag">Sysmon</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>CSRF Detection System</h3>
+                        <p>University Project</p>
+                        <p style="margin-top: 10px;">• This tool detects CSRF web vulnerabilities by identifying CSRF tokens and analyzing the SameSite cookie attribute.<br>
+                        • It is developed using Python.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web Security</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>GitHub Data Scrapper</h3>
+                        <p>Self Experiment</p>
+                        <p style="margin-top: 10px;">• This tool collects and extracts searched data from specified GitHub repositories.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web Scraping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-name">
+                <span class="bracket"><</span> Md. Ashiqur Rahman <span class="bracket">/></span>
+            </p>
+            <p class="footer-tagline">Ethical Hacker & Penetration Tester</p>
+            <div class="footer-social">
+                <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Md Ashiqur Rahman. Built with <span class="heart">♥</span> and lots of <span style="color: var(--green);">caffeine</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

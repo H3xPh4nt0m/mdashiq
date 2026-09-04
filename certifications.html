@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Md Ashiqur Rahman</title>
+    <link rel="icon" type="image/png" href="images/Adobe-Express-file-2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-text">[ system/init ]</div>
+        <div class="loader-bar"><div class="fill"></div></div>
+        <div class="loader-sub">loading certifications<span class="blink">_</span></div>
+    </div>
+
+    <!-- ===== MATRIX CANVAS ===== -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- ===== SCANLINES ===== -->
+    <div class="scanlines"></div>
+
+    <!-- ===== CRT OVERLAY ===== -->
+    <div class="crt-overlay"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket"><</span>
+                <span>ashiq</span>
+                <span class="logo-bracket">/></span>
+                <span class="logo-cursor"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="certifications.html" class="active">certifications</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="resume.pdf" target="_blank" class="nav-resume">resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <h1 class="page-title"><span class="hash">#</span> certifications</h1>
+        <p class="page-subtitle">// verified professional credentials and training</p>
+    </div>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section style="padding-top: 20px; min-height: auto;">
+        <div class="container">
+
+            <!-- International Vendor Certifications -->
+            <div class="cert-category reveal">
+                <div class="cert-category-title">
+                    <span class="hash">#</span>
+                    <h2>International vendor certifications</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Screenshot_1-1.jpg" alt="CEH Certificate">
+                        <h3 class="cert-title">Certified Ethical Hacker (CEH)</h3>
+                        <p class="cert-desc">Specialized in vulnerability assessment and ethical hacking. Proficient in exploiting security gaps to provide proactive defense strategies and ensure robust system integrity.</p>
+                        <div class="cert-links">
+                            <a href="images/Screenshot_1-1.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=tGJyXEzJn/xERY1Ft7OketbASz5kCQ42v6Pt16C//j8=" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Screenshot-2026-05-05-163207.jpg" alt="CHFI Certificate">
+                        <h3 class="cert-title">Computer Hacking Forensic Investigator v11 (CHFI)</h3>
+                        <p class="cert-desc">Completed the CHFI v11 certification from EC-Council, gaining hands-on skills in digital forensics, incident investigation, and evidence analysis.</p>
+                        <div class="cert-links">
+                            <a href="images/Screenshot-2026-05-05-163207.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=qYIYOniqSTsTRsS0D9keASsWNnvhWNO7Ewsu1qLX5ZM=" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Screenshot_1.jpg" alt="CSA Certificate">
+                        <h3 class="cert-title">Certified SOC Analyst v2 (CSA)</h3>
+                        <p class="cert-desc">Specialized in identifying vulnerabilities and managing security incidents. Skilled in monitoring, triaging, and responding to cyber threats using industry-standard SOC protocols.</p>
+                        <div class="cert-links">
+                            <a href="images/Screenshot_1.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=m4pncLSmiPfHH8PQWFI6sLcp2MDNah5JCIeL3FbA0y8=" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Screenshot_2.jpg" alt="ECIH Certificate">
+                        <h3 class="cert-title">EC-Council Certified Incident Handler (ECIH)</h3>
+                        <p class="cert-desc">Specializing in the end-to-end incident handling processâ€”from detection and triage to forensic analysis and recovery. Trained to mitigate the impact of security breaches through structured, rapid-response strategies.</p>
+                        <div class="cert-links">
+                            <a href="images/Screenshot_2.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=wAYnH3V6ZuIBVJ+5RF+nX1T6Pq6Szw/CJ2M9+wcdu/U=" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- International Training Certifications -->
+            <div class="cert-category reveal">
+                <div class="cert-category-title">
+                    <span class="hash">#</span>
+                    <h2>International training certifications</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/CAPT-Hackviser_page-0001.jpg" alt="CAPT Certificate">
+                        <h3 class="cert-title">Certified Associate Penetration Tester (CAPT)</h3>
+                        <p class="cert-desc">Completed the CAPT certification from Hackviser, where I learned real-world skills in penetration testing, web security, privilege escalation, OSINT, and social engineering.</p>
+                        <div class="cert-links">
+                            <a href="images/CAPT-Hackviser_page-0001.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://hackviser.com/verify?id=HV-CAPT-O6DCX4YD" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Ransomware-Defense-Masterclass-Prevention-Response-Recovery-conv-1.jpg" alt="Ransomware Defense Certificate">
+                        <h3 class="cert-title">Ransomware Defense Masterclass: Prevention, Response & Recovery</h3>
+                        <p class="cert-desc">Learned how ransomware and ransomware groups operate, how attackers identify targets, and the methods used to carry out ransomware attacks. Also learned how to prevent, respond, and recover securely.</p>
+                        <div class="cert-links">
+                            <a href="images/Ransomware-Defense-Masterclass-Prevention-Response-Recovery-conv-1.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://credsverse.com/credentials/b82e0cce-b6a1-4255-9157-c9f87fd19bd0?preview=1" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/10774126.jpg" alt="CNSP Certificate">
+                        <h3 class="cert-title">Certified Network Security Practitioner (CNSP)</h3>
+                        <p class="cert-desc">Gained practical skills in network protocols, system security (AD & Linux), vulnerability analysis, cryptography fundamentals, and hands-on use of tools like Nmap and Wireshark.<br>Verify Certificate<br>ID: 10774126<br>First Name: Md.</p>
+                        <div class="cert-links">
+                            <a href="images/10774126.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://secops.group/certificate-validation/" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Certified-Security-Code-Review-Beginners-CSCRB-conv-1.jpg" alt="CSCRB Certificate">
+                        <h3 class="cert-title">Certified Security Code Review Beginners (CSCRB)</h3>
+                        <p class="cert-desc">Learned how to identify, analyze, and mitigate security flaws in source code through secure coding practices and review techniques.</p>
+                        <div class="cert-links">
+                            <a href="images/Certified-Security-Code-Review-Beginners-CSCRB-conv-1.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://redteamleaders.coursestack.com/exam-completion/439674467c656b78" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Mastering-Cyber-Threat-Intelligence-for-SOC-Analysts-Comp-conv-1.jpg" alt="CTI SOC Certificate">
+                        <h3 class="cert-title">Mastering Cyber Threat Intelligence for SOC Analysts</h3>
+                        <p class="cert-desc">Completed SOCRadar's course, gaining hands-on skills in CTI frameworks, threat actor analysis, IOC investigation, and integrating threat intelligence into SOC operations.</p>
+                        <div class="cert-links">
+                            <a href="images/Mastering-Cyber-Threat-Intelligence-for-SOC-Analysts-Comp-conv-1.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://credsverse.com/credentials/46f5feeb-10a0-47e6-aa0d-2f125ebf290d?preview=1" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/ba7f3fbb-f8c1-4401-a8a9-6f8e244708bf.jpg" alt="CCEP Certificate">
+                        <h3 class="cert-title">Certified Cybersecurity Educator Professional (CCEP)</h3>
+                        <p class="cert-desc">Demonstrated mastery across the core pillars of the industry, including architecture and network security, cloud and application security, offensive and defensive operations, and IAM and risk management.</p>
+                        <div class="cert-links">
+                            <a href="images/ba7f3fbb-f8c1-4401-a8a9-6f8e244708bf.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://courses.redteamleaders.com/exam-completion/bc56f5300c1ba737" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/A1B61D75-280F-4AB6-BE63-D95E2BFC747E.jpg" alt="Dark Web Training Certificate">
+                        <h3 class="cert-title">Fundamentals of Dark Web Training</h3>
+                        <p class="cert-desc">Learned to safely explore the dark web, investigate hidden content, and identify cyber threats effectively. Gained skills to monitor dark web activity for security insights.</p>
+                        <div class="cert-links">
+                            <a href="images/A1B61D75-280F-4AB6-BE63-D95E2BFC747E.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://credsverse.com/credentials/7e461cd3-60bc-4415-a8ff-fcbecfb9b4e6?preview=1" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/293d38c9-1ee7-4066-9048-d7169485b5ae.jpg" alt="Session Hijacking Certificate">
+                        <h3 class="cert-title">Session Hijacking and Prevention Techniques</h3>
+                        <p class="cert-desc">Completed hands-on training in session hijacking techniques, web and network session attacks, and secure session management with prevention strategies on the EC-Council Learning Platform.</p>
+                        <div class="cert-links">
+                            <a href="images/293d38c9-1ee7-4066-9048-d7169485b5ae.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://learn.eccouncil.org/certificate/057224c1-45d6-446b-a5d4-fa399db7714c" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Udemy Training Certifications -->
+            <div class="cert-category reveal">
+                <div class="cert-category-title">
+                    <span class="hash">#</span>
+                    <h2>Udemy training certifications</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/UC-07da6d44-ec73-419f-b592-424d95932010.jpg" alt="Android Malware Analysis Certificate">
+                        <h3 class="cert-title">Android Malware Analysis</h3>
+                        <p class="cert-desc">Learn how to analyze Android apps, identify malicious behavior, understand what malware does, and apply techniques to prevent malware threats.</p>
+                        <div class="cert-links">
+                            <a href="images/UC-07da6d44-ec73-419f-b592-424d95932010.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/The-Cyber-Security-Network-Protocol-Hacking-Course.jpg" alt="Network Protocol Hacking Certificate">
+                        <h3 class="cert-title">The Cyber Security Network Protocol Hacking Course</h3>
+                        <p class="cert-desc">This course covers Wireshark-based analysis, reverse engineering, network protocol security, and hands-on implementation of network protocols.</p>
+                        <div class="cert-links">
+                            <a href="images/The-Cyber-Security-Network-Protocol-Hacking-Course.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/UC-3b0203b1-3b0e-4e8d-a028-05b8977cd5ef.jpg" alt="Python Data Engineering Certificate">
+                        <h3 class="cert-title">Python For Data Engineering with 500+ Coding Questions</h3>
+                        <p class="cert-desc">This course introduces the basics of Python, including fundamental programming concepts, logic-building exercises, Python classes, and data types.</p>
+                        <div class="cert-links">
+                            <a href="images/UC-3b0203b1-3b0e-4e8d-a028-05b8977cd5ef.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/UC-92eeba50-8ac5-4489-9798-c5931ceb0b0c.jpg" alt="Windows Password Cracking Certificate">
+                        <h3 class="cert-title">Complete Windows Password Cracking Course | Practical Guide</h3>
+                        <p class="cert-desc">Completed a practical course on Windows password cracking and ethical hacking. Used tools like John the Ripper, Hashcat, Ophcrack, and Mimikatz to bypass, reset, and extract Windows passwords.</p>
+                        <div class="cert-links">
+                            <a href="images/UC-92eeba50-8ac5-4489-9798-c5931ceb0b0c.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Training Center Certifications -->
+            <div class="cert-category reveal">
+                <div class="cert-category-title">
+                    <span class="hash">#</span>
+                    <h2>Local training center certifications</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/CreativeIT_certificate_page-0001.jpg" alt="Certified Ethical Hacking Local Certificate">
+                        <h3 class="cert-title">Certified Ethical Hacking</h3>
+                        <p class="cert-desc">This course teaches the fundamentals of ethical hacking, including system vulnerabilities, basic attack methods, and security testing.</p>
+                        <div class="cert-links">
+                            <a href="images/CreativeIT_certificate_page-0001.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://certificate.citsmp.com/?certificate_id=ECEH-22080115" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/vulnerability-assessment-and-penetration-testing-BTB.jpg" alt="Vulnerability Assessment Certificate">
+                        <h3 class="cert-title">Vulnerability Assessment & Ethical Hacking</h3>
+                        <p class="cert-desc">This course teaches practical skills in identifying, analyzing, and mitigating security threats.</p>
+                        <div class="cert-links">
+                            <a href="images/vulnerability-assessment-and-penetration-testing-BTB.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/Md-Ashiqur-Rahman_SOC_page-0001.jpg" alt="SOC Live Course Certificate">
+                        <h3 class="cert-title">SOC Certification Live Course</h3>
+                        <p class="cert-desc">This course gives basic understanding of SOC analysis and all about Splunk (SIEM). Certificate ID: 9KK33VA85L</p>
+                        <div class="cert-links">
+                            <a href="images/Md-Ashiqur-Rahman_SOC_page-0001.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://bytecapsuleit.com/verify-certificate" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img class="cert-image" src="images/c-programing-basics.jpg" alt="C Programming Certificate">
+                        <h3 class="cert-title">C Programming</h3>
+                        <p class="cert-desc">This course teaches the fundamentals of programming, 400+ problem solving.</p>
+                        <div class="cert-links">
+                            <a href="images/c-programing-basics.jpg" target="_blank" class="cert-link"><i class="fa-solid fa-eye"></i> View Certificate</a>
+                            <a href="https://goedu.ac/certificate/74f48e40b90b4ce696097939caa9040d" target="_blank" class="cert-link verify"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-name">
+                <span class="bracket"><</span> Md. Ashiqur Rahman <span class="bracket">/></span>
+            </p>
+            <p class="footer-tagline">Ethical Hacker & Penetration Tester</p>
+            <div class="footer-social">
+                <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Md Ashiqur Rahman. Built with <span class="heart">♥</span> and lots of <span style="color: var(--green);">caffeine</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>

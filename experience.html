@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Md Ashiqur Rahman</title>
+    <link rel="icon" type="image/png" href="images/Adobe-Express-file-2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-text">[ system/init ]</div>
+        <div class="loader-bar"><div class="fill"></div></div>
+        <div class="loader-sub">loading experience<span class="blink">_</span></div>
+    </div>
+
+    <!-- ===== MATRIX CANVAS ===== -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- ===== SCANLINES ===== -->
+    <div class="scanlines"></div>
+
+    <!-- ===== CRT OVERLAY ===== -->
+    <div class="crt-overlay"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket"><</span>
+                <span>ashiq</span>
+                <span class="logo-bracket">/></span>
+                <span class="logo-cursor"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="certifications.html">certifications</a></li>
+                <li><a href="experience.html" class="active">experience</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="resume.pdf" target="_blank" class="nav-resume">resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <h1 class="page-title"><span class="hash">#</span> experience</h1>
+        <p class="page-subtitle">// professional work history and training</p>
+    </div>
+
+    <!-- ===== EXPERIENCE LIST ===== -->
+    <section style="padding-top: 20px; min-height: auto;">
+        <div class="container">
+            <div class="experience-list">
+
+                <div class="experience-item reveal">
+                    <h3 class="exp-role">Junior Engineer - SOC Analyst (L1)</h3>
+                    <p class="exp-company">Express Systems Limited (Government SOC Project)</p>
+                    <span class="exp-period">[ Jan 2026 - Present ]</span>
+                    <p class="exp-desc">Working as a Level 1 SOC Analyst focusing on real-time threat monitoring, incident detection, and initial response activities.</p>
+                    <ul class="exp-points">
+                        <li>&nbsp;Monitor and analyze security events using Stellar Cyber SIEM</li>
+                        <li>&nbsp;Perform alert triage and incident investigation</li>
+                        <li>&nbsp;Analyze web-based attacks through Radware WAF logs</li>
+                        <li>&nbsp;Support incident response and threat detection workflows</li>
+                        <li>&nbsp;Conduct basic digital forensics analysis during investigations</li>
+                        <li>&nbsp;Apply penetration testing knowledge to validate vulnerabilities</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item reveal">
+                    <h3 class="exp-role">Independent Penetration Testing Practice</h3>
+                    <p class="exp-company">Internship</p>
+                    <span class="exp-period">[ Sep 2025 - Dec 2025 ]</span>
+                    <p class="exp-desc">Gained hands-on experience in penetration testing through practical engagements and lab-based scenarios.</p>
+                    <ul class="exp-points">
+                        <li>&nbsp;Performed web application penetration testing</li>
+                        <li>&nbsp;Conducted mobile application security testing</li>
+                        <li>&nbsp;Tested servers for vulnerabilities and misconfigurations</li>
+                        <li>&nbsp;Used tools like Burp Suite, Nmap, and Nessus</li>
+                        <li>&nbsp;Identified vulnerabilities and suggested remediation strategies</li>
+                        <li>&nbsp;Participated in discussions on findings and reporting</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item reveal">
+                    <h3 class="exp-role">CPTE - Certified Penetration Testing Engineer (Training)</h3>
+                    <p class="exp-company">Professional Training</p>
+                    <span class="exp-period">[ June 2025 - Sep 2025 ]</span>
+                    <p class="exp-desc">Completed professional training in penetration testing covering real-world attack techniques and defensive strategies.</p>
+                    <ul class="exp-points">
+                        <li>&nbsp;Learned web, mobile, and network penetration testing methodologies</li>
+                        <li>&nbsp;Performed vulnerability assessments using Nessus and manual techniques</li>
+                        <li>&nbsp;Practiced exploitation techniques in lab environments</li>
+                        <li>&nbsp;Worked with tools like Burp Suite, Nmap, and Wireshark</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-name">
+                <span class="bracket"><</span> Md. Ashiqur Rahman <span class="bracket">/></span>
+            </p>
+            <p class="footer-tagline">Ethical Hacker & Penetration Tester</p>
+            <div class="footer-social">
+                <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Md Ashiqur Rahman. Built with <span class="heart">♥</span> and lots of <span style="color: var(--green);">caffeine</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>

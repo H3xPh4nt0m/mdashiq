@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Md Ashiqur Rahman</title>
+    <link rel="icon" type="image/png" href="images/Adobe-Express-file-2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-text">[ system/init ]</div>
+        <div class="loader-bar"><div class="fill"></div></div>
+        <div class="loader-sub">loading contact<span class="blink">_</span></div>
+    </div>
+
+    <!-- ===== MATRIX CANVAS ===== -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- ===== SCANLINES ===== -->
+    <div class="scanlines"></div>
+
+    <!-- ===== CRT OVERLAY ===== -->
+    <div class="crt-overlay"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket"><</span>
+                <span>ashiq</span>
+                <span class="logo-bracket">/></span>
+                <span class="logo-cursor"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="certifications.html">certifications</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="contact.html" class="active">contact</a></li>
+                <li><a href="resume.pdf" target="_blank" class="nav-resume">resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <h1 class="page-title"><span class="hash">#</span> contacts</h1>
+        <p class="page-subtitle">// let's connect and build something secure</p>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section style="padding-top: 20px; min-height: auto;">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-left reveal">
+                    <p class="contact-text">
+                        I'm interested in any jobs or freelance opportunities. However, if you have other 
+                        requests or questions, don't hesitate to contact me.
+                    </p>
+                    <div class="contact-info">
+                        <a href="https://wa.me/+8801567825213" target="_blank" class="contact-item">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info">
+                                <h4>Phone / WhatsApp</h4>
+                                <p>+880 1567825213</p>
+                            </div>
+                        </a>
+                        <a href="mailto:mdashik1404@gmail.com" class="contact-item">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info">
+                                <h4>Email</h4>
+                                <p>mdashik1404@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/H3xPh4nt0m" target="_blank" class="contact-item">
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="info">
+                                <h4>GitHub</h4>
+                                <p>H3xPh4nt0m</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" class="contact-item">
+                            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="info">
+                                <h4>LinkedIn</h4>
+                                <p>Md Ashiqur Rahman</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-name">
+                <span class="bracket"><</span> Md. Ashiqur Rahman <span class="bracket">/></span>
+            </p>
+            <p class="footer-tagline">Ethical Hacker & Penetration Tester</p>
+            <div class="footer-social">
+                <a href="https://github.com/H3xPh4nt0m" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-ashiqur-rahman-35151b208/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/md.ashiqrahman.121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/MDASHIKARMAN" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Md Ashiqur Rahman. Built with <span class="heart">♥</span> and lots of <span style="color: var(--green);">caffeine</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>
